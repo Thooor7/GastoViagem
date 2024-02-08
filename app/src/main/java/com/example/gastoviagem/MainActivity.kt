@@ -47,9 +47,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
     }
 
-    private fun calculateTotal(distance: Float, preco: Float, autonomia: Float) {
+    private fun calculateTotal(distance: Float, price: Float, autonomia: Float) {
 
-        var total = distance / autonomia * preco
+        var total = (distance * price) / autonomia
         val totalFormated = String.format("%.2f", total)
         binding?.tvTotal?.text = "R$ ${totalFormated}"
     }
