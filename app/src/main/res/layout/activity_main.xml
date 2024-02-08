@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/distance"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_quilometros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_km"
+        android:layout_gravity="center"
+        android:textColor="@color/greyLight"
+        />
+
+    <EditText
+        android:id="@+id/et_preco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/price"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_preco_por_litro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/price_liter"
+        android:layout_gravity="center"
+        android:textColor="@color/greyLight"/>
+
+    <EditText
+        android:id="@+id/et_autonomia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/autonomy"
+        android:inputType="numberDecimal"
+        android:layout_marginTop="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_km_litro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/km_liter"
+        android:layout_gravity="center"
+        android:textColor="@color/greyLight"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/total_expense"
+        android:textColor="@color/greyLight"
+        android:layout_gravity="center"
+        android:textSize="14sp"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 0"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/calculate"
+        style="@style/Widget.MaterialComponents.Button"
+        android:padding="16dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/greenLight"
+        />
+</LinearLayout>
